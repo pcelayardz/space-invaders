@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-color: blue;
+}
+
+.grid{
+    width: 604px;
+    height: 604px;
+    border: white solid 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    grid-auto-rows: 40px;
+}
+
+.grid > div {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.spaceship{
+    background-image: url('./img/spaceship.png');
+}
+
+.laser{
+    background-image: url('./img/projectile.png');
+}
