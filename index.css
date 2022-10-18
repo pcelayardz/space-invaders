@@ -1,15 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
 }
 
-body{
+body {
     background-color: blue;
 }
 
-.grid{
+.app {
+    display: grid;
+    grid-template-columns: 644px 1fr;
+    gap: 10px;
+}
+
+.grid {
     width: 604px;
     height: 604px;
     border: white solid 2px;
@@ -18,16 +24,49 @@ body{
     grid-auto-rows: 40px;
 }
 
-.grid > div {
+.grid>div {
     width: 40px;
     height: 40px;
     background-size: contain;
 }
 
-.spaceship{
+.message {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    opacity: 85%;
+}
+
+.message h1 {
+    color: blue;
+    text-align: center;
+    line-height: 50px;
+}
+
+.spaceship {
     background-image: url('./img/spaceship.png');
 }
 
-.laser{
+.laser {
     background-image: url('./img/projectile.png');
+}
+
+.alien {
+    background-image: url('./img/alien.png');
+}
+
+.hit {
+    background-image: url('./img/explosion.png');
+}
+
+.scoreboard {
+    margin: 20px;
+    color: white;
+}
+
+.scoreboard>* {
+    margin: 20px;
 }
